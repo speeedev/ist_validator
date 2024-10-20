@@ -76,7 +76,7 @@ class IstValidator {
   /// ```dart
   /// IstValidator.customValidation("hello", (value) => value.length > 3); // true
   /// ```
-  static bool customValidation(String value, Function(String) validation) {
-    return validation(value);
+  static bool customValidation(String value, {List<FormValidatorRule> rules = const []}) {
+    return rules.every((rule) => rule.validate(value) == null);
   }
 }
