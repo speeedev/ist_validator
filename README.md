@@ -48,9 +48,6 @@ print(isNumber); // true
 
 bool passwordsMatch = IstValidator.confirmPassword("password", "password");
 print(passwordsMatch); // true
-
-bool isUppercase = IstValidator.customValidate("HELLO", [RequiredRule(), MinLengthRule(3), MaxLengthRule(16)]);
-print(isUppercase); // true
 ```
 
 ### Basic Example with IstFormValidator

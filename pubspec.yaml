@@ -1,6 +1,6 @@
 name: ist_validator
 description: "A simple package to validate."
-version: 0.0.2
+version: 0.0.4
 homepage: https://spee.dev
 repository: https://github.com/speeedev/ist_validator
 
